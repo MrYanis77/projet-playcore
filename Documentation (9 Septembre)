@@ -1,15 +1,15 @@
 Projet Application Mobile avec API/BDD
 
-Date : Lundi 9 Septembre 2024
+Date : Lundi 9 Septembre 2024 (4 heures)
 
 Membres du Groupe : Cédric / Yanis / Dinura Karunanayake 
 
 Outils qui vont être utilisé pour ce projet : 
-Github (Pour mettre en lien le projet)
-Android Studio (Pour coder l'appli)
-PowerPoint (Pour la maquette)
-SQLite (Pour la base de données locale/distant)
-RAWG.io (l'API que l'on va utiliser)
+- Github (Pour mettre en lien le projet)
+- Android Studio (Pour coder l'appli)
+- PowerPoint (Pour la maquette)
+- SQLite (Pour la base de données locale/distant)
+- RAWG.io (l'API que l'on va utiliser)
 
 Explication du projet : Le projet consiste à créer une application mobile sur lequel on doit respecter plusieurs contraintes, notamment le fait que l'utilisation d'une API ainsi qu'une base de données locale ou distant est obligatoire.
 
