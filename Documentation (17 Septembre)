@@ -1,0 +1,26 @@
+Projet Application Mobile avec API/BDD
+
+Date : Mardi 17 Septembre 2024 (4 heures)
+
+Membres du Groupe : Cédric / Yanis / Dinura
+
+Outils qui vont être utilisé pour ce projet : 
+- Github (Pour mettre en lien le projet)
+- Android Studio (Pour coder l'appli)
+- PowerPoint (Pour la maquette)
+- SQLite (Pour la base de données locale/distant)
+- RAWG.io (l'API que l'on va utiliser)
+- Looping (Pour modéliser le MCD) 
+
+Explication du projet : Le projet consiste à créer une application mobile sur lequel on doit respecter plusieurs contraintes, notamment le fait que l'utilisation d'une API ainsi qu'une base de données locale ou distant est obligatoire.
+
+Thème du projet : Nous avons décidé de faire une application mobile où l'on pourra consulter de nombreux jeux vidéos sur lesquels on peut écrire notre avis avec une notation sur le jeu sélectionné, où les achats/téléchargement du jeu seront redirigé vers leur sites marchands.
+
+L'avancement du projet: Nous avons fait plusieurs choses au cours de nos 3 séances, 
+- Nous avons fini la maquette de l'application afin d'avoir un visuel du rendu final du projet.
+- Nous avons conçu tout d'abord un MCD de notre base de données via Looping, puis ensuite écrit le script permettant de pouvoir créer la base de données ainsi que leurs tables.
+
+Ce qui nous reste a faire: 
+- Coder le coeur de l'application avec Android Studio
+- Implémenter notre API dans le développement afin de pouvoir accéder aux éléments qu'il contient
+- Mettre en lien la base de données et l'application en Java
