@@ -1,0 +1,46 @@
+CREATE TABLE Utilisateur(
+   codeUtilisateur CHAR(6),
+   nomUtilisateur VARCHAR(50),
+   prenomUtilisateur VARCHAR(50),
+   email VARCHAR(50),
+   mdpUtilisateur VARCHAR(50),
+   PRIMARY KEY(codeUtilisateur)
+);
+
+CREATE TABLE Plateforme(
+   codePlateforme CHAR(6),
+   nomPlateforme VARCHAR(50),
+   PRIMARY KEY(codePlateforme)
+);
+
+CREATE TABLE Entreprise(
+   codeEntreprise CHAR(6),
+   nomEntreprise VARCHAR(50),
+   PRIMARY KEY(codeEntreprise)
+);
+
+CREATE TABLE Jeu_Vidéo(
+   codeJeuVideo CHAR(6),
+   nomJeuVideo VARCHAR(50),
+   description VARCHAR(50),
+   codeEntreprise CHAR(6) NOT NULL,
+   PRIMARY KEY(codeJeuVideo),
+   FOREIGN KEY(codeEntreprise) REFERENCES Entreprise(codeEntreprise)
+);
+
+CREATE TABLE Noter(
+   codeUtilisateur CHAR(6),
+   codeJeuVideo CHAR(6),
+   nbrEtoile SMALLINT,
+   PRIMARY KEY(codeUtilisateur, codeJeuVideo),
+   FOREIGN KEY(codeUtilisateur) REFERENCES Utilisateur(codeUtilisateur),
+   FOREIGN KEY(codeJeuVideo) REFERENCES Jeu_Vidéo(codeJeuVideo)
+);
+
+CREATE TABLE Exister(
+   codeJeuVideo CHAR(6),
+   codePlateforme CHAR(6),
+   PRIMARY KEY(codeJeuVideo, codePlateforme),
+   FOREIGN KEY(codeJeuVideo) REFERENCES Jeu_Vidéo(codeJeuVideo),
+   FOREIGN KEY(codePlateforme) REFERENCES Plateforme(codePlateforme)
+);
